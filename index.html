@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="real.css" />
+
+    <title>realphone</title>
+  </head>
+  <body>
+    <div class="main">
+      <nav>
+        <div class="logo"><img src="realphone/logo.png" /></div>
+        <div class="nav-link">
+          <ul>
+            <li><a href="">About</a></li>
+            <li><a href="">Phone</a></li>
+            <li><a href="">Accessories</a></li>
+            <li><a href="">Cart</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="information">
+        <div class="overlay"></div>
+        <img src="realphone/mobile.png" class="mobile">
+        <div id="circle">
+          <div class="features one">
+            <img src="realphone/battery.png" />
+            <div>
+              <h1>Battery</h1>
+              <p>5000mAh Li-Ion battery, 7200hr standby</p>
+            </div>
+          </div>
+          <div class="features two">
+            <img src="realphone/camera.png" />
+            <div>
+              <h1>Camera</h1>
+              <p>50MP rear camera, 12MP front camera</p>
+            </div>
+          </div>
+          <div class="features three">
+            <img src="realphone/display.png" />
+            <div>
+              <h1>Display</h1>
+              <p>Full HD Oled Display</p>
+            </div>
+          </div>
+          <div class="features four">
+            <img src="realphone/processor.png" />
+            <div>
+              <h1>Processor</h1>
+              <p>Snap Dragon Processor , Gaming Processor</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="controls">
+        <img src="realphone/arrow.png" id="upBtn">
+        <h3>Features</h3>
+        <img src="realphone/arrow.png" id="downBtn">
+      </div>
+    </div>
+    <script>
+      let circle= document.getElementById("circle");
+      let upBtn= document.getElementById("upBtn");
+      let downBtn= document.getElementById("downBtn");
+      let rotateValue = circle.style.transform;
+      
+      var rotateSum;
+      upBtn.onclick = function (){
+        rotateSum= rotateValue + "rotate(-90deg)";
+        circle.style.transform = rotateSum;
+        rotateValue = rotateSum;
+        }
+      
+      downBtn.onclick = function (){
+        rotateSum= rotateValue + "rotate(90deg)";
+        circle.style.transform = rotateSum;
+        rotateValue = rotateSum;
+      }
+      </script>
+  </body>
+</html>
