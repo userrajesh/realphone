@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+.main {
+  background: linear-gradient(to right, #9c27b0, #8ecdff);
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+}
+nav {
+  width: 80%;
+  position: sticky;
+  z-index: 1;
+  align-items: center;
+  display: flex;
+  margin: 20px auto;
+}
+.logo {
+  flex-basis: 20%;
+}
+.logo img {
+  width: 150px;
+}
+.nav-link {
+  flex: 1;
+  text-align: right;
+}
+.nav-link ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+}
+.nav-link ul li a {
+  text-decoration: none;
+  color: white;
+}
+.information {
+  width: 700px;
+  height: 700px;
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translateY(-50%);
+}
+#circle {
+  width: 700px;
+  height: 700px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  transition: 1s;
+}
+.mobile img {
+  z-index: 45;
+  height: 500px;
+  transform: translate(83%, 20%);
+}
+.features img {
+  width: 70px;
+}
+.features {
+  position: absolute;
+  display: flex;
+  color: #fff;
+}
+.features div {
+  margin-top: 10px;
+}
+.features div p {
+  margin-top: 10px;
+}
+.one {
+  top: -100px;
+  right: 170px;
+  transform: rotate(-90deg);
+}
+
+.two {
+  top: 300px;
+  right: 550px;
+  transform: rotate(180deg);
+}
+.three {
+  bottom: 0px;
+  right: 250px;
+  transform: rotate(90deg);
+}
+.four {
+  bottom: 300px;
+  left: 550px;
+  /* transform: rotate(180deg); */
+}
+.mobile {
+  width: 200px;
+  z-index: 2;
+  position: absolute;
+  top: 150px;
+  right: 240px;
+}
+.controls {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+.controls h3 {
+  margin: 15px 0;
+  color: #fff;
+}
+#upBtn {
+  width: 15px;
+  cursor: pointer;
+}
+#downBtn {
+  width: 15px;
+  cursor: pointer;
+  transform: rotate(180deg);
+}
+.overlay {
+  height: 0;
+  width: 0;
+  border-top: 500px solid white;
+  border-right: 500px solid transparent;
+  border-bottom: 500px solid white;
+  border-left: 500px solid white;
+  transform: translateY(-15%);
+  position:absolute;
+  right:-230px;
+}
